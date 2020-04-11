@@ -1,0 +1,25 @@
+HOSPITAL NAME: Televitals
+DOCTOR NAME: Dr Tele
+DOCTOR ADDRESS: Cabin 37, Super Speciality Hospitals, Pratapganj,
+New Delhi, Delhi, 110346
+Phone: 1234567890
+
+
+PATIENT NAME: 
+PATIENT AGE: 51 yrs
+PATIENT SEX: 
+
+
+SYMPTOMS
+cough 
+
+DIAGNOSIS
+acute bronchitis bronchitis sore throat 
+
+PRESCRIPTION
+paracetamol 
+
+
+ADVICE
+and regulatory and take some rest
+

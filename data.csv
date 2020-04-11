@@ -1,0 +1,12 @@
+name,age,gender,Height (cm),Weight (kg),Heart Rate (bpm),Respiratory Rate ,SPO2 (%age),Body temp,Cough,Sore Throat,Breathing difficulty,Tiredness,Pregnant,Pre-existing Condition,Score
+Sharma,55,Male,183.0,55.0,145,27,83.0,104.0,8,8,7,6,No,Yes,13.750000000000002
+Sangeeta,50,Female,156.0,78.0,130,26,98.0,98.4,1,0,0,1,No,No,8.079999999999998
+shivangi,21,Female,161.0,51.5,90,24,98.0,99.4,0,0,0,2,No,No,3.5
+aarush,21,Male,181.0,70.0,90,22,98.0,97.1,2,1,1,1,No,No,8.299999999999999
+keerti,50,Female,160.0,75.0,98,20,98.0,97.6,2,0,0,0,No,No,9.08
+Rahul,19,Male,155.0,45.0,199,23,100.0,104.0,10,7,9,4,No,Yes,66.0
+Juan,46,Male,167.0,89.0,139,56,98.9,103.0,10,10,10,10,No,Yes,76.08
+Mus,67,Male,129.0,88.0,89,27,98.0,104.0,10,10,4,2,No,No,45.0
+Mohan,22,Male,174.0,65.0,141,24,98.5,102.3,10,10,10,10,No,No,63.0
+Priya,83,Female,155.0,59.0,180,28,98.5,103.3,6,10,9,8,Yes,Yes,80.0
+new,10,Female,127.0,43.0,130,26,98.7,99.4,0,0,0,0,No,No,22.07

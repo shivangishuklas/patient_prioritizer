@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>TeleVital</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="static/css/animate.css">
+
+    
+
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+
+
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+
+
+
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="static/css/jquery.timepicker.css">
+
+
+
+    
+
+    <link rel="stylesheet" href="static/css/flaticon.css">
+
+    <link rel="stylesheet" href="static/css/icomoon.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <style>
+      .small_width_css_class {
+        width: 30%;
+        height: 30px;
+        margin-left: 10px; 
+      }
+      .med_width_css_class {
+        width: 15%;
+        height: 30px;
+        margin-left: 10px; 
+      }
+      .smallest_width_css_class {
+        width: 10%;
+        height: 30px;
+        margin-left: 10px; 
+      }
+      .smallest2_width_css_class {
+        width: 5%;
+        height: 30px;
+        margin-left: 10px; 
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+
+
+    
+
+    <!-- <div class="js-fullheight"> -->
+
+    <div class="hero-wrap js-fullheight">
+
+      <div class="overlay"></div>
+
+      <div id="particles-js"></div>
+
+      <div class="container">
+        <form action="{{ url_for('editPatient') }}" id="edit_form" method="post" onsubmit="myFunction()">
+
+        <div class="row no-gutters slider-text" data-scrollax-parent="true">
+
+          <div class="col-md-4 ftco-animate" data-scrollax=" properties: { translateY: '70%' }"> 
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        <label for="name" style="margin-left:35%"> Name </label>
+        <label id="name_lbl" style="color:black; margin-left:15%;"> {{ result_pt_send.name }} </label>
+        <br>
+        <label for="age" style="margin-left:35%"> Age </label>
+        <textarea class="smallest_width_css_class" id="age" name="age" style="margin-left:19%">{{ result_pt_send.age }}</textarea>
+        <br> 
+        <label for="gender" style="margin-left:35%"> Gender </label>
+        <textarea class="med_width_css_class" id="gender" name="gender" style="margin-left:13%">{{ result_pt_send.gender }}</textarea>
+        <br>
+        <label for="height" style="margin-left:35%"> Height (in cm) </label>
+        <textarea class="smallest_width_css_class" id="height" name="height" style="margin-left:3%">{{ result_pt_send.Height }}</textarea>
+        <br> 
+        <label for="weight" style="margin-left:35%"> Weight (in kg) </label>
+        <textarea class="smallest_width_css_class" id="weight" name="weight" style="margin-left:4%">{{ result_pt_send.Weight }}</textarea>
+        <br> </br>
+        </div>
+
+        <div class="col-md-4 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          <p><font color="white" style="font-size:60px; margin-left:25%">TeleVital</font></p>
+
+                  <p><font color="white" style="font-size:20px">Enhancing the quality of contactless measurement</font></p>
+
+              <p> <font color="white" style="font-size:30px;margin-left:10%"> Details of the patient are</font></p>
+              <br></br>
+        <label for="heartrate" style="margin-left:10%"> Heart Rate in bpm </label>
+        <textarea class="smallest_width_css_class" id="heart" name="heart" style="margin-left:22.5%">{{ result_pt_send.Heart }}</textarea>
+        <br>
+        <label for="resprate" style="margin-left:10%"> Respiratory Rate </label>
+        <textarea class="smallest_width_css_class" id="resp" name="resp" style="margin-left:25%">{{ result_pt_send.Resp }}</textarea>
+        <br>
+        <label for="spo2" style="margin-left:10%"> SPO2 (%age) </label>
+        <textarea class="smallest_width_css_class" id="spo2" name="spo2" style="margin-left:31.5%">{{ result_pt_send.Spo2 }}</textarea>
+        <br>
+        <label for="bodyt" style="margin-left:10%"> Body Temperature (Farenheit) </label>
+        <textarea class="smallest_width_css_class" id="body" name="body" style="margin-left:5%">{{ result_pt_send.Body }}</textarea>
+        <br> </br>
+        <br></br>
+        <br></br>
+        <input type="submit" value="Commit changes" style="margin-left:22.5%"/>
+        <input type="text" id="inp_name" name="inp_name" value="{{ result_pt_send.name }}" />
+      </div>
+
+        <div class="col-md-4 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        <label for="cough"> Cough  </label>
+        <textarea class="smallest_width_css_class" id="cough" name="cough" style="margin-left:53%">{{ result_pt_send.Cough }}</textarea>
+        <br>
+        <label for="soreth"> Sore Throat  </label>
+        <textarea class="smallest_width_css_class" id="sore" name="sore" style="margin-left:45%">{{ result_pt_send.Sore }}</textarea>
+        <br>
+        <label for="breatheDif"> Breathing difficulty  </label>
+        <textarea class="smallest_width_css_class" id="breath" name="breath" style="margin-left:34%">{{ result_pt_send.Breath }}</textarea>
+        <br>
+        <label for="tiredness"> Tiredness </label>
+        <textarea class="smallest_width_css_class" id="tiredness" name="tiredness" style="margin-left:48%">{{ result_pt_send.Tiredness }}</textarea>
+        
+        <br>
+        <label for="preexist"> Pre exisiting Condition (eg: Asthama etc) </label>
+
+        <textarea class="smallest_width_css_class" id="preex" name="preex" style="margin-left:1%">{{ result_pt_send.preex }}</textarea>
+        <br>
+        <label for="pregnant"> Pregnant </label>
+        <textarea class="smallest_width_css_class" id="pregnant" name="pregnant" style="margin-left:49%">{{ result_pt_send.Pregnant }}</textarea>
+        
+        <br></br>
+        
+        
+        
+      
+      
+      
+  
+
+        
+
+          </div>
+
+        </div>
+        </form>
+
+      </div>
+
+    </div>
+
+  <!-- loader -->
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+
+
+
+  <script src="static/js/jquery.min.js"></script>
+
+  <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+
+  <script src="static/js/popper.min.js"></script>
+
+  <script src="static/js/bootstrap.min.js"></script>
+
+  <script src="static/js/jquery.easing.1.3.js"></script>
+
+  <script src="static/js/jquery.waypoints.min.js"></script>
+
+  <script src="static/js/jquery.stellar.min.js"></script>
+
+  <script src="static/js/owl.carousel.min.js"></script>
+
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+  <script src="static/js/aos.js"></script>
+
+  <script src="static/js/jquery.animateNumber.min.js"></script>
+
+  <script src="static/js/bootstrap-datepicker.js"></script>
+
+  <script src="static/js/jquery.timepicker.min.js"></script>
+
+  <script src="static/js/particles.min.js"></script>
+
+  <script src="static/js/particle.js"></script>
+
+  <script src="static/js/scrollax.min.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
+  <script src="static/js/google-map.js"></script>
+
+  <script src="static/js/main.js"></script>
+
+  
+  <script>
+    $(document).ready(function(){
+        $('#inp_name').hide();
+        
+      });
+    </script>
+    
+
+  </body>
+
+</html>

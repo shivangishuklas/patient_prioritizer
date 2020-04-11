@@ -1,0 +1,24 @@
+HOSPITAL NAME: Televitals
+DOCTOR NAME: Dr Tele
+DOCTOR ADDRESS: Cabin 37, Super Speciality Hospitals, Pratapganj,
+New Delhi, Delhi, 110346
+Phone: 1234567890
+
+
+PATIENT NAME: Ajay Yadav
+PATIENT AGE: 51 yrs
+PATIENT SEX: 
+
+
+SYMPTOMS
+
+
+DIAGNOSIS
+sore throat 
+
+PRESCRIPTION
+
+
+ADVICE
+name of the patient is ajay yadav and 51 years old fever and sore throat and and and
+
